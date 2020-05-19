@@ -18,7 +18,7 @@ $(".grid").on("click", ".square", function () {
     var currentSquare = $(this);
 
     $.ajax({
-        url: "https://flynn.boolean.careers/exercises/api/random/intg",
+        url: "https://flynn.boolean.careers/exercises/api/random/int",
         method: "GET",
         success: function (data) {
             //leggo il contenuto di .number
