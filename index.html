@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>griglia</title>
+    </head>
+    <body>
+        <div class="grid"></div>
+
+        <script id="entry-template" type="text/x-handlebars-template">
+            <div class="{{square_class}}">
+                <!-- !occhio che se mandi a capo </div> ti legge lo spazio vuoto come contenuto -->
+                <div class="{{number_class}}"></div>
+            </div>
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.5.0.js"
+            integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js"></script>
+    </body>
+</html>
